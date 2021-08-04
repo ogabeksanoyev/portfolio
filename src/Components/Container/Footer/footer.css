@@ -1,0 +1,77 @@
+.footer_style{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: var(--white);
+    background: var(--footerBg);
+    overflow-y: hidden;
+}
+.footer_style h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer_style a{
+    color: var(--white);
+    text-decoration: none;
+}
+.footer_style a:hover{
+    color: var(--white);
+}
+.footer_style a p{
+    position: relative;
+    display: inline-block;
+    padding: 10px 0px;
+   
+}
+.footer_style a p::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: var(--white);
+}
+.footer_style a p::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: var(--danger);
+}
+.footer_style p{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    letter-spacing: 1.2px;
+}
+.footer_icon{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.footer_icon a{
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background: transparent;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+.footer_icon a:hover{
+    background: var(--gray-dark);
+}
+.footer_icon a:hover .icons{
+    transform: scale(1.1);
+}
+.footer_icon a .icons{
+color: var(--white);
+height: 24px;
+line-height: 40px;
+width: 100%;
+text-align: center;
+transition: all 0.4s ease-in-out;
+}
